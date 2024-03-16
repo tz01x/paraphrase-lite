@@ -9,7 +9,7 @@ Paraphrase Lite is a straightforward application designed to adjust the tone of 
 - Install required dependencies with `pip install -r requirements.txt`.
 - Finally, execute the application with `python script.py`.
 
-## Building the Application
+## Building the Application (.exe)
 
 ```powershell
 pyinstaller .\main.spec
