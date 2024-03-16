@@ -75,8 +75,8 @@ class LoginDialog(QDialog):
     def read_credentials(self):
         if os.path.exists(CRED_PATH):
             with open(CRED_PATH, "rb") as file:
-                encrypted_username = file.readline().strip()
-                encrypted_password = file.readline()
+                encrypted_username = file.readline(5_000_000).strip()
+                encrypted_password = file.readline(5_000_000)
             return encrypted_username, encrypted_password
         return None, None
     
