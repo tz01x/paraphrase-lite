@@ -67,7 +67,7 @@ class LoginDialog(QDialog):
         return decrypted_username, decrypted_password
 
     def save_credentials(self, encrypted_username, encrypted_password):
-    
+
         with open(CRED_PATH, "wb") as file:
             file.write(encrypted_username + b'\n')
             file.write(encrypted_password)
@@ -112,7 +112,6 @@ class LoginDialog(QDialog):
             HuggingFaceTextGenerator.login(username, password)
             self.accept()
         except Exception as e:
-            print(e)
             truncate_len = 26
             truncate_msg = str(e)[:truncate_len] + ('...' if len(str(e)) > truncate_len else '')
             QMessageBox.warning(self, "Login Failed", truncate_msg)

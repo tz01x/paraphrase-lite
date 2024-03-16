@@ -1,11 +1,12 @@
-import requests
 import dataclasses
-import random
+import requests
 import time
 from typing import Generator
+
 from hugchat import hugchat
 from hugchat.login import Login
 
+from .config import BASE_DIR
 
 @dataclasses.dataclass
 class TextGenInput:
@@ -22,7 +23,7 @@ class TextGenerator:
 
 class HuggingFaceTextGenerator(TextGenerator):
     __cookies = None
-    __cookie_path_dir = "./cookies_snapshot/"
+    __cookie_path_dir = (BASE_DIR/"cookies").as_posix()
     __system_prompts = 'you are the top class text suggestion ai,\
         you job is to MODIFY THE INPUT TEXT TO THE DESIRE OUTPUT TEXT;\
         and you will only return the output and nothing else and \
