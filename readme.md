@@ -15,6 +15,9 @@ Paraphrase Lite is a straightforward application designed to adjust the tone of 
 pyinstaller .\main.spec
 ```
 
+## Download The latest Exe file
+![Lasts build](dist/paraphrase_lite.exe)
+
 ## UI 
 ### Login UI
 ![Login User Interface](images/login-ui.png)
