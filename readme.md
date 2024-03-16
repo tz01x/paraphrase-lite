@@ -25,4 +25,4 @@ pyinstaller .\main.spec
 
 You can watch a demo of the project in action by accessing the video file located at `videos/demo.mp4` in this repository.
 
-![Demo video](videos/demo.mp4)
+![Demo video](videos/demo.gif)
