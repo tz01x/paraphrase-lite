@@ -1,13 +1,28 @@
+# Paraphrase-Lite Overview
+
+Paraphrase Lite is a straightforward application designed to adjust the tone of your written text while also standardizing and correcting any grammatical errors.
 
 
-## How to Run locally
-- create virtual environment by `python -m venv .env`
-- active the environment `.env/Script/activate`
-- install requirement `pip install -r requirements.txt`
-- finally, run it by `python script.py`
+## Running Locally
+- Create a virtual environment using `python -m venv .env`.
+- Activate the environment with `.env/Scripts/activate`.
+- Install required dependencies with `pip install -r requirements.txt`.
+- Finally, execute the application with `python script.py`.
 
-## How to build
+## Building the Application
 
 ```powershell
 pyinstaller .\main.spec
 ```
+
+## UI 
+### Login UI
+![Login User Interface](images/login-ui.png)
+### Main UI
+![Main User Interface](images/main-ui.png)
+
+## Video Demo
+
+You can watch a demo of the project in action by accessing the video file located at `videos/demo.mp4` in this repository.
+
+![Demo video](videos/demo.mp4)
